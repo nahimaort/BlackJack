@@ -15,7 +15,7 @@ public class BlackJack {
         
         if (getHandPoints(croupierCards) > 21) {
             for (int i = 0; i < 3; i++) {
-                if (getHandPoints(parameters[i]) < 21) winners.add("Player " + (i+1));
+                if (getHandPoints(parameters[i]) <= 21) winners.add("Player " + (i+1));
             }
         } else if (isBlackJack(croupierCards)) {
             winners.add("Croupier");
